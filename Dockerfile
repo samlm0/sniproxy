@@ -5,4 +5,4 @@ ADD sniproxy.conf /sniproxy.conf
 EXPOSE 80/tcp
 EXPOSE 443/tcp
 
-CMD ['/usr/sbin/sniproxy', '-c', '/sniproxy.conf']
+ENTRYPOINT ["/usr/sbin/sniproxy", "-c", "/sniproxy.conf"]
